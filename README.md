@@ -56,6 +56,10 @@ Build by running:
 cargo xtask --release
 ```
 
+## Unknown issues
+
+If an application fails to start under ZLUDA or crashes please check [Known Issues](#known-issues) section below. If nothing there applies, then please read [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+
 ## Known Issues
 
 ### Hardware
@@ -123,6 +127,16 @@ cargo xtask --release
 
 ### Applications
 
+#### llama.cpp
+
+If you are building llama.cpp with cmake and don't want it to crash on ZLUDA then you should use `CUDA_DOCKER_ARCH=compute_61` like this:
+```
+make CUDA_DOCKER_ARCH=compute_61 
+```
+Alternatively, building with cmake should work with no changes.
+
+Performance is currently much lower than the native HIP backend, see the discussion in #102.
+
 #### Arnold
 
 * ZLUDA implements minimum of OptiX framework to support Arnold. ZLUDA's OptiX is buggy, unoptimized and incomplete. It's been tested with Arnold 7.1.4.1 command line rendering on Linux.
@@ -188,12 +202,12 @@ cargo xtask --release
 #### 3DF Zephyr
 - ZLUDA is much slower than CUDA.
 
-  3DF Zephyr is triggering an uderlying ROCm/HIP performance issue.
+  3DF Zephyr is triggering an underlying ROCm/HIP performance issue.
 
 #### Reality Capture
 - ZLUDA is much slower than CUDA.
 
-  Reality Capture is triggering an uderlying ROCm/HIP performance issue.
+  Reality Capture is triggering an underlying ROCm/HIP performance issue.
 
 #### CompuBench
 
@@ -244,7 +258,7 @@ cargo xtask --release
 
 ## For developers
 
-If you are curious about ZLUDA's architecture, you can read a broad overview in [ARCHITECTURE.md](ARCHITECTURE.md).
+If you are curious about ZLUDA's architecture, you can read a broad overview in [ARCHITECTURE.md](ARCHITECTURE.md). If you want to debug ZLUDA check the "Debugging" section in [TROUBLESHOOTING.md](TROUBLESHOOTING.md#debugging).
 
 ## License
 
