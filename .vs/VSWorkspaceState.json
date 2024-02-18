@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ext\\llvm-project",
+    "\\ext\\llvm-project\\llvm",
+    "\\ext\\llvm-project\\llvm\\utils",
+    "\\ext\\llvm-project\\llvm\\utils\\vscode",
+    "\\ext\\llvm-project\\llvm\\utils\\vscode\\llvm",
+    "\\zluda\\src\\impl",
+    "\\zluda\\tests"
+  ],
+  "SelectedNode": "\\comgr",
+  "PreviewInSolutionExplorer": false
+}

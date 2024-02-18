@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-ZLUDA",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "appliesTo": "Makefile.toml",
+      "taskLabel": "task-Makefile",
+      "type": "launch"
+    }
+  ]
+}
