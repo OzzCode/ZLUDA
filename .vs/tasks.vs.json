@@ -10,6 +10,11 @@
       "appliesTo": "Makefile.toml",
       "taskLabel": "task-Makefile",
       "type": "launch"
+    },
+    {
+      "taskLabel": "task-function_version",
+      "appliesTo": "zluda/tests/function_version.ptx",
+      "type": "launch"
     }
   ]
 }
