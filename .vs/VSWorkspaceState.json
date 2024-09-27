@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.devcontainer",
-    "\\ext\\llvm-project",
-    "\\ext\\llvm-project\\mlir\\utils\\vscode",
-    "\\zluda\\tests"
+    "\\.devcontainer"
   ],
-  "SelectedNode": "\\.devcontainer",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
